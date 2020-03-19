@@ -12,6 +12,7 @@ public class UserAuthenticated implements Principal {
 	private String id;
 	private String nombres;
 	private String correo;
+	private String perfilId;
 	
 	
 	
