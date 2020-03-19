@@ -90,7 +90,7 @@ public class JWTAuthorizationFilter extends BasicAuthenticationFilter {
 		String usuarioId = claims.get("id").toString();
 		String nombres = claims.get("nombre").toString();
 		String correo = claims.get("correo").toString();
-		String perfilId = claims.get("correo").toString();
+		String perfilId = claims.get("perfilId").toString();
 		
 		UserAuthenticated userAuthenticated = new UserAuthenticated(usuarioId, nombres, correo, perfilId);
 		
