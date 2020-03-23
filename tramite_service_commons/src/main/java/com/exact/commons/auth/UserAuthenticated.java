@@ -10,7 +10,8 @@ import lombok.Data;
 public class UserAuthenticated implements Principal {
 	
 	private String id;
-	private String nombres;
+	private String username;
+	private String nombre;
 	private String correo;
 	private String perfilId;
 	

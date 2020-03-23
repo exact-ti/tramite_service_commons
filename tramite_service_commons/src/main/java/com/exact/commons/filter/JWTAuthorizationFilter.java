@@ -88,11 +88,12 @@ public class JWTAuthorizationFilter extends BasicAuthenticationFilter {
 
 		UsernamePasswordAuthenticationToken authentication = null;
 		String usuarioId = claims.get("id").toString();
+		String username = claims.get("username").toString();
 		String nombres = claims.get("nombre").toString();
 		String correo = claims.get("correo").toString();
 		String perfilId = claims.get("perfilId").toString();
 		
-		UserAuthenticated userAuthenticated = new UserAuthenticated(usuarioId, nombres, correo, perfilId);
+		UserAuthenticated userAuthenticated = new UserAuthenticated(usuarioId, username, nombres, correo, perfilId);
 		
 		Object authoritiesJson = claims.get("authorities");
 		Collection<GrantedAuthority> authorities = new ArrayList<>();
