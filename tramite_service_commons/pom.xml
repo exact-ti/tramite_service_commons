@@ -9,11 +9,12 @@
 		<version>2.2.5.RELEASE</version>
 		<relativePath /> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.exact</groupId>
+	<groupId>com.exact.commons</groupId>
 	<artifactId>tramite_service_commons</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>tramite_service_commons</name>
 	<description>Demo project for Spring Boot</description>
+	<packaging>jar</packaging>
 
 	<properties>
 		<java.version>1.8</java.version>
@@ -66,15 +67,6 @@
 			<version>0.9.1</version>
 		</dependency>
 	</dependencies>
-
-	<build>
-		<plugins>
-			<plugin>
-				<groupId>org.springframework.boot</groupId>
-				<artifactId>spring-boot-maven-plugin</artifactId>
-			</plugin>
-		</plugins>
-	</build>
 	
 	<dependencyManagement>
 		<dependencies>
