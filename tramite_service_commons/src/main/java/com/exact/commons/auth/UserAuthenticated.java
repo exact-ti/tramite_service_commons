@@ -9,6 +9,11 @@ import lombok.Data;
 @AllArgsConstructor
 public class UserAuthenticated implements Principal {
 	
+	public UserAuthenticated(String id, String nombre) {
+		this.id = id;
+		this.nombre = nombre;
+	}
+	
 	private String id;
 	private String username;
 	private String nombre;
